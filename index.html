@@ -3,14 +3,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Jotform Image Compression Widget</title>
 
-<!-- Jotform CSS-Stile für das originale Design -->
-<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/stylebuilder/static/form-common.css" />
-<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/themes/CSS/defaultV2.css" />
-<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/themes/CSS/548b1325700cc48d318b4567.css" />
-<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_styles.css" />
-<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_feature.css" />
+<!-- Jotform Original-Styles -->
+<link rel="stylesheet" href="https://cdn01.jotfor.ms/stylebuilder/static/form-common.css" />
+<link rel="stylesheet" href="https://cdn02.jotfor.ms/themes/CSS/defaultV2.css" />
+<link rel="stylesheet" href="https://cdn03.jotfor.ms/themes/CSS/548b1325700cc48d318b4567.css" />
+<link rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_styles.css" />
+<link rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_feature.css" />
 
-<!-- Bestehende Jotform-Skripte -->
+<!-- Jotform Original-Skripte -->
 <script src="https://cdn03.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
 <script src="https://cdn01.jotfor.ms/static/jotform.forms.js" type="text/javascript"></script>
 <script src="https://cdn02.jotfor.ms/js/vendor/imageinfo.js" type="text/javascript"></script>
@@ -21,19 +21,29 @@
 <body>
 <form class="jotform-form" action="https://submit.jotform.com/submit/250692894870067" method="post" enctype="multipart/form-data" name="form_250692894870067" id="250692894870067" accept-charset="utf-8" autocomplete="on">
   
-  <label for="input_5">Auftragsnummer</label>
-  <input type="text" id="input_5" name="q5_auftragsnummer" required>
-  
-  <label for="input_6">Kennzeichen</label>
-  <input type="text" id="input_6" name="q6_kennzeichen" required>
-  
-  <label for="input_7">FahrzeugIdentNummer</label>
-  <input type="text" id="input_7" name="q7_fahrzeugidentnummer" required>
-  
-  <label for="input_4">Lichtbilddateien</label>
-  <input type="file" id="input_4" name="q4_lichtbilddateien[]" multiple accept="image/*">
-  
-  <button type="submit">Absenden</button>
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li class="form-line" data-type="control_textbox">
+        <label for="input_5">Auftragsnummer</label>
+        <input type="text" id="input_5" name="q5_auftragsnummer" required>
+      </li>
+      <li class="form-line" data-type="control_textbox">
+        <label for="input_6">Kennzeichen</label>
+        <input type="text" id="input_6" name="q6_kennzeichen" required>
+      </li>
+      <li class="form-line" data-type="control_textbox">
+        <label for="input_7">FahrzeugIdentNummer</label>
+        <input type="text" id="input_7" name="q7_fahrzeugidentnummer" required>
+      </li>
+      <li class="form-line" data-type="control_fileupload">
+        <label for="input_4">Lichtbilddateien</label>
+        <input type="file" id="input_4" name="q4_lichtbilddateien[]" multiple accept="image/*">
+      </li>
+      <li class="form-line">
+        <button type="submit">Absenden</button>
+      </li>
+    </ul>
+  </div>
 </form>
 
 <!-- Bildverkleinerung vor dem Upload -->
